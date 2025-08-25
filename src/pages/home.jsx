@@ -2,6 +2,7 @@ import { Main, Section } from "../components/shared";
 
 import Hero from "../sections/hero";
 import Promo from "../sections/promo";
+import Stats from "../sections/stats";
 
 const Home = () => {
   return (
@@ -12,6 +13,10 @@ const Home = () => {
 
       <Section $bg="#06121f">
         <Promo />
+      </Section>
+
+      <Section $bg="#06121f">
+        <Stats />
       </Section>
     </Main>
   );

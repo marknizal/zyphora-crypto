@@ -11,6 +11,10 @@ export const Wrapper = styled.div`
 
 export const Title = styled.h1`
   font-size: 2.5rem;
+
+  ${breakpoint.mobile} {
+    font-size: 2rem;
+  }
 `;
 
 export const SubTitle = styled.p`

@@ -1,14 +1,10 @@
 import * as S from "./styles";
 
-const SectionTitle = ({
-  title = "Title",
-  subTitle = "Description",
-  $align,
-}) => {
+const SectionTitle = ({ title, subTitle, $align }) => {
   return (
     <S.Wrapper $align={$align}>
-      <S.Title>{title}</S.Title>
-      <S.SubTitle>{subTitle}</S.SubTitle>
+      {title && <S.Title>{title}</S.Title>}
+      {subTitle && <S.SubTitle>{subTitle}</S.SubTitle>}
     </S.Wrapper>
   );
 };
