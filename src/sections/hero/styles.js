@@ -16,7 +16,7 @@ export const gradient = {
 
 export const btn = {
   borderRadius: radius.lg,
-  padding: "1.25rem 1.5rem",
+  padding: "1.5rem",
 
   noBg: {
     background: color.transparent,

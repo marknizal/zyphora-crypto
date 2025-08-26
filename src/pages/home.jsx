@@ -5,6 +5,7 @@ import Promo from "../sections/promo";
 import Stats from "../sections/stats";
 import Market from "../sections/market";
 import Instruction from "../sections/instruction";
+import Download from "../sections/download";
 
 const Home = () => {
   return (
@@ -27,6 +28,10 @@ const Home = () => {
 
       <Section $bg="#06121f">
         <Instruction />
+      </Section>
+
+      <Section $bg="#06121f">
+        <Download />
       </Section>
     </Main>
   );

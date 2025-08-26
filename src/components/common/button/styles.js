@@ -12,4 +12,8 @@ export const AntdButton = styled(Button)`
     opacity: 0.6;
     cursor: not-allowed;
   }
+
+  * {
+    flex-shrink: 0;
+  }
 `;
