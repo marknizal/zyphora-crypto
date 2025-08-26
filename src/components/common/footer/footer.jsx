@@ -11,11 +11,11 @@ import { Image } from "../../shared";
 import * as S from "./styles";
 
 const socials = [
-  { name: "Facebook", icon: FaFacebook, url: "https://facebook.com" },
-  { name: "LinkedIn", icon: FaLinkedin, url: "https://www.linkedin.com/" },
-  { name: "YouTube", icon: FaYoutube, url: "https://youtube.com" },
-  { name: "Twitter", icon: FaTwitter, url: "https://twitter.com" },
-  { name: "Instagram", icon: FaInstagram, url: "https://instagram.com" },
+  { name: "Facebook", icon: FaFacebook, url: "#" },
+  { name: "LinkedIn", icon: FaLinkedin, url: "#" },
+  { name: "YouTube", icon: FaYoutube, url: "#" },
+  { name: "Twitter", icon: FaTwitter, url: "#" },
+  { name: "Instagram", icon: FaInstagram, url: "#" },
 ];
 
 const Footer = () => {
@@ -24,11 +24,11 @@ const Footer = () => {
   return (
     <S.Wrapper>
       <S.Logo>
-        <Image src={LogoImg} $measure="2.5rem" alt="Zyphora Crypto logo" />
+        <Image src={LogoImg} $measure="2rem" alt="Zyphora Crypto logo" />
         <p>Zyphora Crypto</p>
       </S.Logo>
 
-      <p>
+      <p className="text">
         Bitcoin, first released as open-source software, is the first
         decentralized cryptocurrency. Since its release, it has inspired the
         development of thousands of other digital currencies.
@@ -55,8 +55,7 @@ const Footer = () => {
         <small>© {year} Mark John Allen Nizal. All rights reserved.</small>
 
         <nav aria-label="Legal links">
-          <a href="/support">Support</a> ·{" "}
-          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/#">Support</a> · <a href="/#">Privacy Policy</a>
         </nav>
       </S.Copyright>
     </S.Wrapper>

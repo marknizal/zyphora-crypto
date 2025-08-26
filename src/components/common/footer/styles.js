@@ -14,7 +14,7 @@ export const Wrapper = styled.footer`
     padding: 4rem 1rem 0;
   }
 
-  p {
+  .text {
     font-size: 0.9rem;
     line-height: 1.5rem;
     color: #ddd;
@@ -33,7 +33,7 @@ export const Wrapper = styled.footer`
 export const Logo = styled.div`
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.75rem;
 
   p {
     margin: 0;
