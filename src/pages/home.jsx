@@ -1,41 +1,53 @@
+import { Suspense, lazy } from "react";
+
 import { Main, Section } from "../components/shared";
 
-import Hero from "../sections/hero";
-import Promo from "../sections/promo";
-import Stats from "../sections/stats";
-import Market from "../sections/market";
-import Instruction from "../sections/instruction";
-import Download from "../sections/download";
+import Navbar from "../components/common/navbar";
 import Footer from "../components/common/footer";
+import Loader from "../components/common/loader";
+
+const Hero = lazy(() => import("../sections/hero"));
+const Promo = lazy(() => import("../sections/promo"));
+const Stats = lazy(() => import("../sections/stats"));
+const Market = lazy(() => import("../sections/market"));
+const Instruction = lazy(() => import("../sections/instruction"));
+const Download = lazy(() => import("../sections/download"));
 
 const Home = () => {
   return (
     <Main>
-      <Section $bg="linear-gradient(70deg, #06121f 0%, #29323c 100%);">
-        <Hero />
-      </Section>
+      <Suspense fallback={<Loader />}>
+        <Navbar />
 
-      <Section $bg="#06121f">
-        <Promo />
-      </Section>
+        <Section
+          id="home"
+          $bg="linear-gradient(70deg, #06121f 0%, #29323c 100%);"
+        >
+          <Hero />
+        </Section>
 
-      <Section $bg="#06121f">
-        <Stats />
-      </Section>
+        <Section id="services" $bg="#06121f">
+          <Promo />
+        </Section>
 
-      <Section $bg="#06121f">
-        <Market />
-      </Section>
+        <Section id="resources" $bg="#06121f">
+          <Stats />
+        </Section>
 
-      <Section $bg="#06121f">
-        <Instruction />
-      </Section>
+        <Section id="market" $bg="#06121f">
+          <Market />
+        </Section>
 
-      <Section $bg="#06121f">
-        <Download />
-      </Section>
+        <Section id="get-started" $bg="#06121f">
+          <Instruction />
+        </Section>
 
-      <Footer />
+        <Section id="download" $bg="#06121f">
+          <Download />
+        </Section>
+
+        <Footer />
+      </Suspense>
     </Main>
   );
 };

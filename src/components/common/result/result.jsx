@@ -37,7 +37,7 @@ const Result = ({ status = "404", onClick }) => {
   } = STATUS[status] || STATUS[404];
 
   const handleClick = () => {
-    onClick ? onClick() : navigate("/klyria-agency/");
+    onClick ? onClick() : navigate("/zyphora-crypto/");
   };
 
   return (
