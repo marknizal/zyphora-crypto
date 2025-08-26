@@ -4,6 +4,7 @@ import Hero from "../sections/hero";
 import Promo from "../sections/promo";
 import Stats from "../sections/stats";
 import Market from "../sections/market";
+import Instruction from "../sections/instruction";
 
 const Home = () => {
   return (
@@ -22,6 +23,10 @@ const Home = () => {
 
       <Section $bg="#06121f">
         <Market />
+      </Section>
+
+      <Section $bg="#06121f">
+        <Instruction />
       </Section>
     </Main>
   );
