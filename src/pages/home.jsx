@@ -6,6 +6,7 @@ import Stats from "../sections/stats";
 import Market from "../sections/market";
 import Instruction from "../sections/instruction";
 import Download from "../sections/download";
+import Footer from "../components/common/footer";
 
 const Home = () => {
   return (
@@ -33,6 +34,8 @@ const Home = () => {
       <Section $bg="#06121f">
         <Download />
       </Section>
+
+      <Footer />
     </Main>
   );
 };

@@ -31,7 +31,7 @@ export const Box = styled.div`
 `;
 
 const StyledImg = styled.img`
-  width: 100%;
+  width: ${(props) => props.$measure || "100%"};
   aspect-ratio: ${(props) => props.$ratio || "1 / 1"};
   object-fit: ${(props) => props.$fit || "cover"};
   pointer-events: none;
