@@ -1,13 +1,20 @@
-# Zyphora - Cryptocurrency Wallet Website
+# Zyphora - Cryptocurrency Website
 
 Zyphora is a sleek and fully responsive cryptocurrency website, built with **React + Vite**.  
 It is designed for modern crypto platforms, providing a professional and user-friendly experience across all devices.
 
 ---
 
+## 🚀 Live Demo
+[View Live Demo](https://marknizal.github.io/zyphora-crypto/)
+
+---
+
 ## 🛠️ Tech Stack
-- **React** (Frontend library)  
-- **Vite** (Fast development & build tool)  
+- **React** (Frontend library)
+- **Vite** (Fast development & build tool)
+- **Emotion CSS** (CSS-in-JS styling)
+- **Ant Design (AntD)** (UI components library)
 
 ---
 
