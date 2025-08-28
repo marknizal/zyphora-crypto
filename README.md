@@ -30,10 +30,10 @@ Clone the project:
 
 ```bash
 # Clone repository
-git clone https://github.com/marknizal/zyphora.git
+git clone https://github.com/marknizal/zyphora-crypto.git
 
 # Navigate to project folder
-cd zyphora
+cd zyphora-crypto
 
 # Install dependencies
 npm install
